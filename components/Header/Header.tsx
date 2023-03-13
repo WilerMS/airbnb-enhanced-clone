@@ -1,11 +1,24 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { HiGlobeAlt, HiMenu, HiSearch, HiUserCircle } from 'react-icons/hi'
+import { CSSTransition } from 'react-transition-group'
 
 import logo from '@images/logo.svg'
-
+import { Finder } from '@components/Finder'
 
 export const Header = () => {
+
+  const [searchedText, setSearchedText] = useState<string>('')
+  const nodeRef = useRef(null)
+
+  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setSearchedText(e.currentTarget.value)
+  }
+
+  const resetSearch = () => {
+    setSearchedText('')
+  }
+
   return (
     <header className='sticky bg-white top-0 z-50 p-5 grid grid-cols-3 border-b md:px-10'>
       <div className='flex items-center cursor-pointer'>
@@ -19,6 +32,8 @@ export const Header = () => {
       </div>
       <div className='flex items-center rounded-full py-2 md:border-2 md:shadow-sm hover:shadow-md transition-shadow'>
         <input
+          onChange={handleChange}
+          value={searchedText}
           type="text"
           className='w-full flex-grow pl-5 bg-transparent outline-none text-gray-600 placeholder-gray-400'
           placeholder='Search some place'
@@ -40,6 +55,14 @@ export const Header = () => {
         </div>
       </div>
 
+      {searchedText &&
+        <Finder
+          onCancel={resetSearch}
+          onConfirm={() => {
+            console.log('confirmed search')
+          }}
+        />
+      }
     </header>
   )
 }
