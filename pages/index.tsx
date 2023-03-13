@@ -1,86 +1,138 @@
+import { Header } from '@components/Header'
+import { Banner } from '@components/Banner'
+import { LargeCard, MediunCard, SmallCard } from '@components/Cards'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import { Footer } from '@components/Footer'
+import { HorizontalList } from '@components/Lists'
+import { Section } from '@components/Section'
 
-const Home: NextPage = () => {
+type PropsType = {
+  nearby: PlacesType[]
+  liveAnyWhere: PlacesType[]
+  places: PlacesType[]
+  cities: PlacesType[]
+  accommodations: StayType[]
+}
+
+const Home: NextPage<PropsType> = ({
+  nearby = [],
+  liveAnyWhere = [],
+  places = [],
+  accommodations = [],
+  cities = []
+}) => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Airbnb</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <Header />
+      <Banner />
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+      <main className='mx-auto px-8'>
+        <Section title='Explore nearby'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
+            {nearby.map(({ img, location, distance }) => (
+              <SmallCard
+                key={img}
+                img={img}
+                location={location}
+                distance={distance}
+              />
+            ))}
+          </div>
+        </Section>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
+        <Section title='Recommended for you'>
+          <HorizontalList scrollSize={300}>
+            {accommodations.map(({ img, title, location, price, rate }) => (
+              <MediunCard
+                key={title}
+                img={img}
+                title={title}
+                location={location}
+                price={price}
+                rate={rate}
+              />
+            ))}
+          </HorizontalList>
+        </Section>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+        <Section title='Live Anywhere'>
+          <HorizontalList scrollSize={300}>
+            {liveAnyWhere.map(({ img, title }) => (
+              <MediunCard
+                key={title}
+                img={img}
+                title={title}
+              />
+            ))}
+          </HorizontalList>
+        </Section>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+        <Section title='Most popular places'>
+          <HorizontalList scrollSize={300}>
+            {places.map(({ img, title, location, price, rate }) => (
+              <MediunCard
+                key={title}
+                img={img}
+                title={title}
+                location={location}
+                price={price}
+                rate={rate}
+              />
+            ))}
+          </HorizontalList>
+        </Section>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <Section title='More in Spain'>
+          <HorizontalList scrollSize={300}>
+            {cities.map(({ img, title, subtitle }) => (
+              <MediunCard
+                key={title}
+                img={img}
+                title={title}
+                subtitle={subtitle}
+              />
+            ))}
+          </HorizontalList>
+        </Section>
+
+
+        <LargeCard
+          img='https://links.papareact.com/4cj'
+          title='The best places this summer'
+          description='Desired places by Airbnb lovers'
+          buttonText='Get Info'
+        />
+
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+      <Footer />
+
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const nearby: PlacesType[] = await fetch('http://localhost:3000/nearby').then(r => r.json())
+  const liveAnyWhere: PlacesType[] = await fetch('http://localhost:3000/live-anywhere').then(r => r.json())
+  const places: PlacesType[] = await fetch('http://localhost:3000/places').then(r => r.json())
+  const cities: PlacesType[] = await fetch('http://localhost:3000/cities').then(r => r.json())
+  const accommodations: StayType[] = await fetch('http://localhost:3000/accommodations').then(r => r.json())
+
+  return {
+    props: {
+      nearby,
+      liveAnyWhere,
+      places,
+      accommodations,
+      cities,
+    }
+  }
 }
 
 export default Home

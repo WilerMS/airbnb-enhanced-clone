@@ -1,0 +1,425 @@
+{
+  "nearby": [
+    {
+      "img": "https://images.pexels.com/photos/3254729/pexels-photo-3254729.jpeg",
+      "location": "Madrid",
+      "distance": "45-minute drive",
+      "title": "Madrid",
+      "description": "Madrid is the capital and largest city of Spain, located in the center of the country. It is known for its rich history, beautiful architecture, art museums, and lively nightlife. Some of the city's most famous landmarks include the Royal Palace, the Prado Museum, and the Puerta del Sol square."
+    },
+    {
+      "img": "https://images.pexels.com/photos/3354774/pexels-photo-3354774.jpeg",
+      "location": "Sevilla",
+      "distance": "4.5-hour drive",
+      "title": "Seville",
+      "description": "Seville is the capital and largest city of the Andalusia region in southern Spain. It is known for its beautiful architecture, historic monuments, and vibrant culture. Some of the city's most famous landmarks include the Alcazar palace, the Seville Cathedral, and the Plaza de España."
+    },
+    {
+      "img": "https://images.pexels.com/photos/10473354/pexels-photo-10473354.jpeg",
+      "location": "Bilbao",
+      "distance": "4.5-hour drive",
+      "title": "Bilbao",
+      "description": "Bilbao is a city in the Basque Country in northern Spain, known for its unique architecture, art museums, and lively food scene. Some of the city's most famous landmarks include the Guggenheim Museum, the Zubizuri Bridge, and the Casco Viejo (Old Town) district."
+    },
+    {
+      "img": "https://images.pexels.com/photos/15577493/pexels-photo-15577493.jpeg",
+      "location": "Valencia",
+      "distance": "4-hour drive",
+      "title": "Valencia",
+      "description": "Valencia is a city on the eastern coast of Spain, known for its beautiful beaches, modern architecture, and delicious cuisine. Some of the city's most famous landmarks include the City of Arts and Sciences, the Central Market, and the Turia Gardens."
+    },
+    {
+      "img": "https://images.pexels.com/photos/11829151/pexels-photo-11829151.jpeg",
+      "location": "Granada",
+      "distance": "45-minute drive",
+      "title": "Granada",
+      "description": "Granada is a city in southern Spain, known for its rich history, stunning architecture, and vibrant culture. Some of the city's most famous landmarks include the Alhambra palace, the Generalife gardens, and the Albaicin neighborhood."
+    },
+    {
+      "img": "https://images.pexels.com/photos/15520700/pexels-photo-15520700.jpeg",
+      "location": "Santander",
+      "distance": "4.5-hour drive",
+      "title": "Santander",
+      "description": "Santander is a coastal city in northern Spain, known for its beautiful beaches, historic buildings, and lively atmosphere. Some of the city's most famous landmarks include the Magdalena Palace, the Cathedral of Santander, and the Plaza Porticada."
+    },
+    {
+      "img": "https://images.pexels.com/photos/819764/pexels-photo-819764.jpeg",
+      "location": "Barcelona",
+      "distance": "6-hour drive",
+      "title": "Barcelona, the capital of Catalonia",
+      "description": "Barcelona is a city located on the northeastern coast of Spain. It is the capital of the Catalonia region and the second most populous municipality in Spain. The city is known for its rich history, stunning architecture, and lively cultural scene. Barcelona is home to numerous UNESCO World Heritage Sites, including the Park Güell, the Palau de la Música Catalana, and the Casa Batlló. Visitors can also enjoy the city's famous food scene, which includes traditional Catalan cuisine as well as world-renowned restaurants."
+    },
+    {
+      "img": "https://images.pexels.com/photos/13101537/pexels-photo-13101537.jpeg",
+      "location": "Zaragoza",
+      "distance": "2-hour drive",
+      "title": "Zaragoza, a historic city in northern Spain",
+      "description": "Zaragoza is a city in northeastern Spain, located on the banks of the Ebro River. It is the capital of the Zaragoza province and the fifth most populous municipality in Spain. The city has a rich history and is home to numerous historic landmarks and monuments, including the Basilica of Our Lady of the Pillar, the Aljafería Palace, and the Cathedral-Basilica of Our Lady of the Pillar. Visitors can also enjoy the city's many museums, parks, and cultural events."
+    },
+    {
+      "img": "https://images.pexels.com/photos/13365615/pexels-photo-13365615.jpeg",
+      "location": "Valladolid",
+      "distance": "6-hour drive",
+      "title": "Valladolid, a city of culture and history",
+      "description": "Valladolid is a city in northwestern Spain, located in the Castile and León region. It is the capital of the Valladolid province and the thirteenth most populous municipality in Spain. The city has a rich cultural heritage, with numerous historic landmarks and monuments, including the National Sculpture Museum, the Palace of Santa Cruz, and the Cathedral of Valladolid. Visitors can also enjoy the city's many festivals and cultural events, including the Valladolid International Film Festival and the Seminci festival."
+    },
+    {
+      "img": "https://images.pexels.com/photos/943507/pexels-photo-943507.jpeg",
+      "location": "Toledo",
+      "distance": "2-hour drive",
+      "title": "Toledo, a city of three cultures",
+      "description": "Toledo is a city in central Spain, located in the Castile-La Mancha region. It is known for its rich history and cultural heritage, as it was once a melting pot of Christian, Jewish, and Muslim cultures. The city is home to numerous historic landmarks and monuments, including the Alcázar of Toledo, the Cathedral of Toledo, and the Monastery of San Juan de los Reyes. Visitors can also enjoy the city's many museums, art galleries, and cultural events."
+    }
+  ],
+  "live-anywhere": [
+    {
+      "img": "https://links.papareact.com/2io",
+      "title": "Outdoor getaways"
+    },
+    {
+      "img": "https://links.papareact.com/q7j",
+      "title": "Unique stays"
+    },
+    {
+      "img": "https://links.papareact.com/s03",
+      "title": "Entire homes"
+    },
+    {
+      "img": "https://links.papareact.com/8ix",
+      "title": "Pet allowed"
+    },
+    {
+      "img": "https://links.papareact.com/q7j",
+      "title": "Unique stays"
+    },
+    {
+      "img": "https://links.papareact.com/s03",
+      "title": "Entire homes"
+    },
+    {
+      "img": "https://links.papareact.com/8ix",
+      "title": "Pet allowed"
+    },
+    {
+      "img": "https://links.papareact.com/q7j",
+      "title": "Unique stays"
+    },
+    {
+      "img": "https://links.papareact.com/s03",
+      "title": "Entire homes"
+    },
+    {
+      "img": "https://links.papareact.com/8ix",
+      "title": "Pet allowed"
+    }
+  ],
+  "places": [
+    {
+      "title": "Eiffel Tower",
+      "location": "Paris, France",
+      "img": "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg",
+      "rate": 4.9,
+      "price": 25
+    },
+    {
+      "title": "Statue of Liberty",
+      "location": "New York City, United States",
+      "img": "https://images.pexels.com/photos/64271/queen-of-liberty-statue-of-liberty-new-york-liberty-statue-64271.jpeg",
+      "rate": 4.7,
+      "price": 20
+    },
+    {
+      "title": "Great Wall of China",
+      "location": "Beijing, China",
+      "img": "https://images.pexels.com/photos/13950422/pexels-photo-13950422.jpeg",
+      "rate": 4.8,
+      "price": 30
+    },
+    {
+      "title": "Machu Picchu",
+      "location": "Cusco, Peru",
+      "img": "https://images.pexels.com/photos/1570610/pexels-photo-1570610.jpeg",
+      "rate": 4.9,
+      "price": "$35 per person"
+    },
+    {
+      "title": "Taj Mahal",
+      "location": "Agra, India",
+      "img": "https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg",
+      "rate": 4.8,
+      "price": 40
+    },
+    {
+      "title": "Sagrada Familia",
+      "location": "Barcelona, Spain",
+      "img": "https://images.pexels.com/photos/4383766/pexels-photo-4383766.jpeg",
+      "rate": 4.7,
+      "price": 20
+    },
+    {
+      "title": "Colosseum",
+      "location": "Rome, Italy",
+      "img": "https://images.pexels.com/photos/2225439/pexels-photo-2225439.jpeg",
+      "rate": 4.8,
+      "price": 30
+    },
+    {
+      "title": "Sydney Opera House",
+      "location": "Sydney, Australia",
+      "img": "https://images.pexels.com/photos/5707610/pexels-photo-5707610.jpeg",
+      "rate": 4.6,
+      "price": "$25 per person"
+    },
+    {
+      "title": "Petra",
+      "location": "Ma'an, Jordan",
+      "img": "https://images.pexels.com/photos/4388165/pexels-photo-4388165.jpeg",
+      "rate": 4.9,
+      "price": 45
+    },
+    {
+      "title": "Museum of Modern Art",
+      "location": "New York City, United States",
+      "img": "https://images.pexels.com/photos/14517571/pexels-photo-14517571.jpeg",
+      "rate": 4.7,
+      "price": 25
+    }
+  ],
+  "accommodations": [
+    {
+      "img": "https://images.pexels.com/photos/3722818/pexels-photo-3722818.jpeg",
+      "title": "RIU Hotel",
+      "description": "Madrid, capital of spain.",
+      "rate": 4.5,
+      "location": "Madrid, Spain",
+      "price": 124
+    },
+    {
+      "img": "https://images.pexels.com/photos/2549573/pexels-photo-2549573.jpeg",
+      "title": "Paradise Suites",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Porto, Portugal",
+      "price": 50
+    },
+    {
+      "img": "https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg",
+      "title": "For beauty views",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Lisboa, Portugal",
+      "price": 100.5
+    },
+    {
+      "img": "https://images.pexels.com/photos/597909/pexels-photo-597909.jpeg",
+      "title": "Time square",
+      "description": "Madrid, capital of spain.",
+      "rate": 4.5,
+      "location": "New York, USA",
+      "price": 200
+    },
+    {
+      "img": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg",
+      "title": "An ancient city",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Rome, Italy",
+      "price": 50
+    },
+    {
+      "img": "https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg",
+      "title": "Meet the history",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Athens, Greece",
+      "price": 30
+    },
+    {
+      "img": "https://images.pexels.com/photos/11882956/pexels-photo-11882956.jpeg",
+      "title": "Breath pure air",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Guatemala city, Guatemala",
+      "price": 30
+    },
+    {
+      "img": "https://images.pexels.com/photos/2598675/pexels-photo-2598675.jpeg",
+      "title": "Beach and sun",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Punta Cana, Dom. Rep",
+      "price": 30
+    },
+    {
+      "img": "https://images.pexels.com/photos/3722818/pexels-photo-3722818.jpeg",
+      "title": "RIU Hotel",
+      "description": "Madrid, capital of spain.",
+      "rate": 4.5,
+      "location": "Madrid, Spain",
+      "price": 124
+    },
+    {
+      "img": "https://images.pexels.com/photos/2549573/pexels-photo-2549573.jpeg",
+      "title": "Paradise Suites",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Porto, Portugal",
+      "price": 50
+    },
+    {
+      "img": "https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg",
+      "title": "For beauty views",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Lisboa, Portugal",
+      "price": 100.5
+    },
+    {
+      "img": "https://images.pexels.com/photos/597909/pexels-photo-597909.jpeg",
+      "title": "Time square",
+      "description": "Madrid, capital of spain.",
+      "rate": 4.5,
+      "location": "New York, USA",
+      "price": 200
+    },
+    {
+      "img": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg",
+      "title": "An ancient city",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Rome, Italy",
+      "price": 50
+    },
+    {
+      "img": "https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg",
+      "title": "Meet the history",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Athens, Greece",
+      "price": 30
+    },
+    {
+      "img": "https://images.pexels.com/photos/11882956/pexels-photo-11882956.jpeg",
+      "title": "Breath pure air",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Guatemala city, Guatemala",
+      "price": 30
+    },
+    {
+      "img": "https://images.pexels.com/photos/2598675/pexels-photo-2598675.jpeg",
+      "title": "Beach and sun",
+      "description": "Real desc men",
+      "rate": 4.5,
+      "location": "Punta Cana, Dom. Rep",
+      "price": 30
+    }
+  ],
+  "cities": [
+    {
+      "img": "https://images.pexels.com/photos/3254729/pexels-photo-3254729.jpeg",
+      "distance": "45-minute drive",
+      "title": "Madrid",
+      "subtitle": "The Heartbeat of Spain",
+      "description": "Madrid is the capital and largest city of Spain, located in the center of the country. It is known for its rich history, beautiful architecture, art museums, and lively nightlife. Some of the city's most famous landmarks include the Royal Palace, the Prado Museum, and the Puerta del Sol square."
+    },
+    {
+      "img": "https://images.pexels.com/photos/3354774/pexels-photo-3354774.jpeg",
+      "distance": "4.5-hour drive",
+      "title": "Seville",
+      "subtitle": "The City of Flamenco and Festivals",
+      "description": "Seville is the capital and largest city of the Andalusia region in southern Spain. It is known for its beautiful architecture, historic monuments, and vibrant culture. Some of the city's most famous landmarks include the Alcazar palace, the Seville Cathedral, and the Plaza de España."
+    },
+    {
+      "img": "https://images.pexels.com/photos/10473354/pexels-photo-10473354.jpeg",
+      "distance": "4.5-hour drive",
+      "title": "Bilbao",
+      "subtitle": "The Basque Gem of Northern Spain",
+      "description": "Bilbao is a city in the Basque Country in northern Spain, known for its unique architecture, art museums, and lively food scene. Some of the city's most famous landmarks include the Guggenheim Museum, the Zubizuri Bridge, and the Casco Viejo (Old Town) district."
+    },
+    {
+      "img": "https://images.pexels.com/photos/15577493/pexels-photo-15577493.jpeg",
+      "distance": "4-hour drive",
+      "title": "Valencia",
+      "subtitle": "The Home of Paella and Arts",
+      "description": "Valencia is a city on the eastern coast of Spain, known for its beautiful beaches, modern architecture, and delicious cuisine. Some of the city's most famous landmarks include the City of Arts and Sciences, the Central Market, and the Turia Gardens."
+    },
+    {
+      "img": "https://images.pexels.com/photos/11829151/pexels-photo-11829151.jpeg",
+      "distance": "45-minute drive",
+      "title": "Granada",
+      "subtitle": "The Moorish Jewel of Andalusia",
+      "description": "Granada is a city in southern Spain, known for its rich history, stunning architecture, and vibrant culture. Some of the city's most famous landmarks include the Alhambra palace, the Generalife gardens, and the Albaicin neighborhood."
+    },
+    {
+      "img": "https://images.pexels.com/photos/15520700/pexels-photo-15520700.jpeg",
+      "distance": "4.5-hour drive",
+      "title": "Santander",
+      "subtitle": "The Elegant Coastal Town of Cantabria",
+      "description": "Santander is a coastal city in northern Spain, known for its beautiful beaches, historic buildings, and lively atmosphere. Some of the city's most famous landmarks include the Magdalena Palace, the Cathedral of Santander, and the Plaza Porticada."
+    },
+    {
+      "img": "https://images.pexels.com/photos/819764/pexels-photo-819764.jpeg",
+      "distance": "6-hour drive",
+      "title": "Barcelona",
+      "subtitle": "The Cosmopolitan Capital of Catalonia",
+      "description": "Barcelona is a city located on the northeastern coast of Spain. It is the capital of the Catalonia region and the second most populous municipality in Spain. The city is known for its rich history, stunning architecture, and lively cultural scene. Barcelona is home to numerous UNESCO World Heritage Sites, including the Park Güell, the Palau de la Música Catalana, and the Casa Batlló. Visitors can also enjoy the city's famous food scene, which includes traditional Catalan cuisine as well as world-renowned restaurants."
+    },
+    {
+      "img": "https://images.pexels.com/photos/13101537/pexels-photo-13101537.jpeg",
+      "distance": "2-hour drive",
+      "title": "Zaragoza",
+      "subtitle": "The Historic Crossroads of Aragon",
+      "description": "Zaragoza is a city in northeastern Spain, located on the banks of the Ebro River. It is the capital of the Zaragoza province and the fifth most populous municipality in Spain. The city has a rich history and is home to numerous historic landmarks and monuments, including the Basilica of Our Lady of the Pillar, the Aljafería Palace, and the Cathedral-Basilica of Our Lady of the Pillar. Visitors can also enjoy the city's many museums, parks, and cultural events."
+    },
+    {
+      "img": "https://images.pexels.com/photos/13365615/pexels-photo-13365615.jpeg",
+      "distance": "6-hour drive",
+      "title": "Valladolid",
+      "subtitle": "The Renaissance City of Castilla y Leon",
+      "description": "Valladolid is a city in northwestern Spain, located in the Castile and León region. It is the capital of the Valladolid province and the thirteenth most populous municipality in Spain. The city has a rich cultural heritage, with numerous historic landmarks and monuments, including the National Sculpture Museum, the Palace of Santa Cruz, and the Cathedral of Valladolid. Visitors can also enjoy the city's many festivals and cultural events, including the Valladolid International Film Festival and the Seminci festival."
+    },
+    {
+      "img": "https://images.pexels.com/photos/943507/pexels-photo-943507.jpeg",
+      "distance": "2-hour drive",
+      "title": "Toledo",
+      "subtitle": "The Timeless City of Three Cultures",
+      "description": "Toledo is a city in central Spain, located in the Castile-La Mancha region. It is known for its rich history and cultural heritage, as it was once a melting pot of Christian, Jewish, and Muslim cultures. The city is home to numerous historic landmarks and monuments, including the Alcázar of Toledo, the Cathedral of Toledo, and the Monastery of San Juan de los Reyes. Visitors can also enjoy the city's many museums, art galleries, and cultural events."
+    },
+    {
+      "img": "https://images.pexels.com/photos/1884417/pexels-photo-1884417.jpeg",
+      "distance": "1-hour drive",
+      "title": "Málaga",
+      "subtitle": "The Sun-soaked Haven on the Costa del Sol",
+      "description": "Málaga is a vibrant coastal city with a rich history and cultural heritage. The city boasts an impressive array of museums and galleries, including the Picasso Museum and the Carmen Thyssen Museum. Málaga is also renowned for its lively nightlife, with a range of bars, clubs, and restaurants catering to all tastes."
+    },
+    {
+      "img": "https://images.pexels.com/photos/12345897/pexels-photo-12345897.jpeg",
+      "distance": "5-hour drive",
+      "title": "San Sebastián",
+      "subtitle": "The Basque Culinary Capita",
+      "description": "San Sebastián is a charming seaside city in the Basque Country with a reputation for outstanding cuisine. The city has more Michelin-starred restaurants per capita than any other city in the world, and its pintxos bars offer a dazzling array of bite-sized snacks. San Sebastián also has a picturesque Old Town and several beautiful beaches."
+    },
+    {
+      "img": "https://images.pexels.com/photos/7861201/pexels-photo-7861201.jpeg",
+      "distance": "4-hour drive",
+      "title": "Córdoba",
+      "subtitle": "A Journey Through the Magnificent Moorish Past",
+      "description": "Córdoba was once the capital of Islamic Spain and is home to some of the most impressive examples of Islamic architecture in Europe. The most famous of these is the Mezquita, a stunning mosque-cathedral with a forest of over 800 pillars. Córdoba's historic center is also home to a number of other fascinating sites, including the Alcázar de los Reyes Cristianos and the Jewish Quarter."
+    },
+    {
+      "img": "https://images.pexels.com/photos/11943295/pexels-photo-11943295.jpeg",
+      "distance": "3.5-hour drive",
+      "title": "Salamanca",
+      "subtitle": "The Golden City of Knowledge and History",
+      "description": "Salamanca is a beautiful university town with a stunning historic center built from golden sandstone. The city is home to one of the oldest and most prestigious universities in Europe, and its Plaza Mayor is considered one of the most beautiful in Spain. Salamanca is also renowned for its lively nightlife and traditional cuisine."
+    },
+    {
+      "img": "https://images.pexels.com/photos/10157042/pexels-photo-10157042.jpeg",
+      "distance": "1.5-hour drive",
+      "title": "Segovia",
+      "subtitle": "The Enchanting Medieval Town of Castles and Cathedrals",
+      "description": "Segovia is a small but beautiful city with a rich cultural heritage. The city's most famous landmark is its stunning Roman aqueduct, which dates back to the 1st century AD. Segovia is also home to an impressive medieval castle and a gothic cathedral. The city's Jewish Quarter is a picturesque maze of narrow streets and white-washed buildings."
+    }
+  ]
+}
