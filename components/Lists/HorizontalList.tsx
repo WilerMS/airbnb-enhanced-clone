@@ -28,23 +28,23 @@ export const HorizontalList = ({
 
 
   return (
-    <div className='horizontal-list relative flex items-center'>
+    <div className='group horizontal-list relative flex items-center'>
       <button
         onClick={scrollLeft}
-        className='absolute left-0 hidden text-2xl border rounded-full p-3 z-20 bg-white transition hover:scale-110 active:scale-95 hover:shadow-lg'
+        className='absolute left-0 hidden md:group-hover:block text-2xl border rounded-full p-3 z-20 bg-white transition hover:scale-110 active:scale-95 hover:shadow-lg'
       >
         <HiOutlineChevronLeft />
       </button>
 
       <div
         ref={ref}
-        className='flex space-x-4 p-3 -ml-3 scrollbar-hide overflow-scroll select-none items-center'
+        className='flex space-x-4 py-3 px-8 -mx-8 scrollbar-hide overflow-scroll select-none items-center'
       >
         {children}
       </div>
       <button
         onClick={scrollRight}
-        className='absolute right-0 hidden text-2xl border-2 rounded-full p-3 z-20 bg-white transition hover:scale-110 active:scale-95 hover:shadow-lg'
+        className='absolute right-0 hidden md:group-hover:block text-2xl border-2 rounded-full p-3 z-20 bg-white transition hover:scale-110 active:scale-95 hover:shadow-lg'
       >
         <HiOutlineChevronRight />
       </button>

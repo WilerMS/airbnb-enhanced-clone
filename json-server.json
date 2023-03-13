@@ -140,7 +140,7 @@
       "location": "Cusco, Peru",
       "img": "https://images.pexels.com/photos/1570610/pexels-photo-1570610.jpeg",
       "rate": 4.9,
-      "price": "$35 per person"
+      "price": 35
     },
     {
       "title": "Taj Mahal",
@@ -168,7 +168,7 @@
       "location": "Sydney, Australia",
       "img": "https://images.pexels.com/photos/5707610/pexels-photo-5707610.jpeg",
       "rate": 4.6,
-      "price": "$25 per person"
+      "price": 25
     },
     {
       "title": "Petra",
@@ -186,70 +186,6 @@
     }
   ],
   "accommodations": [
-    {
-      "img": "https://images.pexels.com/photos/3722818/pexels-photo-3722818.jpeg",
-      "title": "RIU Hotel",
-      "description": "Madrid, capital of spain.",
-      "rate": 4.5,
-      "location": "Madrid, Spain",
-      "price": 124
-    },
-    {
-      "img": "https://images.pexels.com/photos/2549573/pexels-photo-2549573.jpeg",
-      "title": "Paradise Suites",
-      "description": "Real desc men",
-      "rate": 4.5,
-      "location": "Porto, Portugal",
-      "price": 50
-    },
-    {
-      "img": "https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg",
-      "title": "For beauty views",
-      "description": "Real desc men",
-      "rate": 4.5,
-      "location": "Lisboa, Portugal",
-      "price": 100.5
-    },
-    {
-      "img": "https://images.pexels.com/photos/597909/pexels-photo-597909.jpeg",
-      "title": "Time square",
-      "description": "Madrid, capital of spain.",
-      "rate": 4.5,
-      "location": "New York, USA",
-      "price": 200
-    },
-    {
-      "img": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg",
-      "title": "An ancient city",
-      "description": "Real desc men",
-      "rate": 4.5,
-      "location": "Rome, Italy",
-      "price": 50
-    },
-    {
-      "img": "https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg",
-      "title": "Meet the history",
-      "description": "Real desc men",
-      "rate": 4.5,
-      "location": "Athens, Greece",
-      "price": 30
-    },
-    {
-      "img": "https://images.pexels.com/photos/11882956/pexels-photo-11882956.jpeg",
-      "title": "Breath pure air",
-      "description": "Real desc men",
-      "rate": 4.5,
-      "location": "Guatemala city, Guatemala",
-      "price": 30
-    },
-    {
-      "img": "https://images.pexels.com/photos/2598675/pexels-photo-2598675.jpeg",
-      "title": "Beach and sun",
-      "description": "Real desc men",
-      "rate": 4.5,
-      "location": "Punta Cana, Dom. Rep",
-      "price": 30
-    },
     {
       "img": "https://images.pexels.com/photos/3722818/pexels-photo-3722818.jpeg",
       "title": "RIU Hotel",

@@ -61,7 +61,7 @@ const Home: NextPage<PropsType> = ({
           </HorizontalList>
         </Section>
 
-        <Section title='Live Anywhere'>
+        {/* <Section title='Live Anywhere'>
           <HorizontalList scrollSize={300}>
             {liveAnyWhere.map(({ img, title }) => (
               <MediunCard
@@ -71,7 +71,7 @@ const Home: NextPage<PropsType> = ({
               />
             ))}
           </HorizontalList>
-        </Section>
+        </Section> */}
 
         <Section title='Most popular places'>
           <HorizontalList scrollSize={300}>
@@ -88,7 +88,7 @@ const Home: NextPage<PropsType> = ({
           </HorizontalList>
         </Section>
 
-        <Section title='More in Spain'>
+        <Section title='More from Spain'>
           <HorizontalList scrollSize={300}>
             {cities.map(({ img, title, subtitle }) => (
               <MediunCard
