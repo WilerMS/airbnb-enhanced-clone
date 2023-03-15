@@ -21,6 +21,7 @@
       "@utils/*": ["utils/*"],
       "@lib/*": ["lib/*"],
       "@services/*": ["services/*"],
+      "@hooks/*": ["hooks/*"],
       "*": ["types/*.d.ts"]
     }
   },

@@ -1,1 +1,1 @@
-export { HorizontalList } from './HorizontalList'
+export { HorizontalList, SmallHorizontalList } from './HorizontalList'

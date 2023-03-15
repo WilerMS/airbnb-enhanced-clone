@@ -1,26 +1,27 @@
 import Image from 'next/image'
-import React, { useRef, useState } from 'react'
-import { HiGlobeAlt, HiMenu, HiSearch, HiUserCircle } from 'react-icons/hi'
-import { CSSTransition } from 'react-transition-group'
+import { FormEvent, useRef, useState } from 'react'
+import { HiGlobeAlt, HiMenu, HiUserCircle } from 'react-icons/hi'
 
 import logo from '@images/logo.svg'
-import { Finder } from '@components/Finder'
+import { FinderLg } from '@components/Finder'
+import { SearchButton, SearchInput } from './Search'
 
 export const Header = () => {
 
   const [searchedText, setSearchedText] = useState<string>('')
-  const nodeRef = useRef(null)
+  const [showFinder, setShowFinder] = useState(false)
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
-    setSearchedText(e.currentTarget.value)
-  }
+  const handleChange = (e: FormEvent<HTMLInputElement>) => setSearchedText(e.currentTarget.value)
 
-  const resetSearch = () => {
+  const handleCancelSearch = () => {
     setSearchedText('')
+    setShowFinder(false)
   }
+
+  const handleFocus = () => setShowFinder(true)
 
   return (
-    <header className='sticky bg-white top-0 z-50 p-5 grid grid-cols-3 border-b md:px-10'>
+    <header className='sticky bg-white top-0 z-50 p-5 grid grid-cols-2 md:grid-cols-3 border-b md:px-10'>
       <div className='flex items-center cursor-pointer'>
         <Image
           src={logo}
@@ -30,23 +31,17 @@ export const Header = () => {
           objectPosition='left'
         />
       </div>
-      <div className='flex items-center rounded-full py-2 md:border-2 md:shadow-sm hover:shadow-md transition-shadow'>
-        <input
-          onChange={handleChange}
-          value={searchedText}
-          type="text"
-          className='w-full flex-grow pl-5 bg-transparent outline-none text-gray-600 placeholder-gray-400'
-          placeholder='Search some place'
-        />
-        <div className='md:inline-flex md:mx-2 hidden h-8 bg-red-500 text-white rounded-full p-2 cursor-pointer'>
-          <HiSearch />
-        </div>
-      </div>
+      <SearchInput
+        value={searchedText}
+        onChange={handleChange}
+        onFocus={handleFocus}
+      />
       <div className='flex items-center space-x-4 justify-end text-gray-600'>
         <p className='md:block hidden font-bold rounded-full hover:bg-gray-100 py-2 px-3 cursor-pointer transition-all'>
           Become a host
         </p>
-        <div className='cursor-pointer rounded-full hover:bg-gray-100 transition-all p-2 text-xl'>
+        <SearchButton onClick={() => { console.log('Hola') }} />
+        <div className='hidden md:flex cursor-pointer rounded-full hover:bg-gray-100 transition-all p-2 text-xl'>
           <HiGlobeAlt />
         </div>
         <div className='flex items-center border-2 p-2 rounded-full cursor-pointer hover:shadow-md transition-shadow space-x-1'>
@@ -55,12 +50,10 @@ export const Header = () => {
         </div>
       </div>
 
-      {searchedText &&
-        <Finder
-          onCancel={resetSearch}
-          onConfirm={() => {
-            console.log('confirmed search')
-          }}
+      {showFinder &&
+        <FinderLg
+          searchedText={searchedText}
+          onCancel={handleCancelSearch}
         />
       }
     </header>

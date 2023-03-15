@@ -1,1 +1,1 @@
-export { Finder } from './Finder'
+export { FinderLg } from './FinderLg'
