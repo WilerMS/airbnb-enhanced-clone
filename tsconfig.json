@@ -22,6 +22,7 @@
       "@lib/*": ["lib/*"],
       "@services/*": ["services/*"],
       "@hooks/*": ["hooks/*"],
+      "@redux/*": ["redux/*"],
       "*": ["types/*.d.ts"]
     }
   },

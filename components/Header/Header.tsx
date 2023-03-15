@@ -1,25 +1,10 @@
 import Image from 'next/image'
-import { FormEvent, useRef, useState } from 'react'
 import { HiGlobeAlt, HiMenu, HiUserCircle } from 'react-icons/hi'
 
 import logo from '@images/logo.svg'
-import { FinderLg } from '@components/Finder'
-import { SearchButton, SearchInput } from './Search'
+import { FinderLg, FinderSm } from '@components/Finder'
 
 export const Header = () => {
-
-  const [searchedText, setSearchedText] = useState<string>('')
-  const [showFinder, setShowFinder] = useState(false)
-
-  const handleChange = (e: FormEvent<HTMLInputElement>) => setSearchedText(e.currentTarget.value)
-
-  const handleCancelSearch = () => {
-    setSearchedText('')
-    setShowFinder(false)
-  }
-
-  const handleFocus = () => setShowFinder(true)
-
   return (
     <header className='sticky bg-white top-0 z-50 p-5 grid grid-cols-2 md:grid-cols-3 border-b md:px-10'>
       <div className='flex items-center cursor-pointer'>
@@ -31,16 +16,12 @@ export const Header = () => {
           objectPosition='left'
         />
       </div>
-      <SearchInput
-        value={searchedText}
-        onChange={handleChange}
-        onFocus={handleFocus}
-      />
-      <div className='flex items-center space-x-4 justify-end text-gray-600'>
+      <FinderLg />
+      <div className='flex items-center gap-4 justify-end text-gray-600'>
         <p className='md:block hidden font-bold rounded-full hover:bg-gray-100 py-2 px-3 cursor-pointer transition-all'>
           Become a host
         </p>
-        <SearchButton onClick={() => { console.log('Hola') }} />
+        <FinderSm />
         <div className='hidden md:flex cursor-pointer rounded-full hover:bg-gray-100 transition-all p-2 text-xl'>
           <HiGlobeAlt />
         </div>
@@ -49,13 +30,6 @@ export const Header = () => {
           <HiUserCircle className='text-2xl text-gray-500' />
         </div>
       </div>
-
-      {showFinder &&
-        <FinderLg
-          searchedText={searchedText}
-          onCancel={handleCancelSearch}
-        />
-      }
     </header>
   )
 }

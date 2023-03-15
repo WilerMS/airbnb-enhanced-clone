@@ -13,7 +13,7 @@ export const SearchInput = ({
         ref={ref}
         onChange={onChange}
         value={value}
-        onFocus= {onFocus}
+        onFocus={onFocus}
         type="text"
         className='w-full flex-grow pl-5 bg-transparent outline-none text-gray-600 placeholder-gray-400'
         placeholder='Search some place'
@@ -36,4 +36,26 @@ export const SearchButton = ({
       <HiSearch />
     </button>
   )
+}
+
+export const SearchInputSm = ({
+  value,
+  onChange = () => { },
+}: DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>) => {
+
+  return (
+    <div className='search-input flex items-center rounded-full py-4 border-2 shadow-sm hover:shadow-md transition-shadow'>
+      <input
+        onChange={onChange}
+        value={value}
+        type="text"
+        className='w-full flex-grow pl-5 bg-transparent outline-none text-gray-600 placeholder-gray-400'
+        placeholder='Search some place'
+      />
+      <div className='flex mx-4 h-8 bg-red-500 text-white rounded-full p-2 cursor-pointer'>
+        <HiSearch />
+      </div>
+    </div>
+  )
+
 }
