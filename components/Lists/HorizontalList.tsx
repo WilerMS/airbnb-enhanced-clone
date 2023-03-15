@@ -87,7 +87,7 @@ export const SmallHorizontalList = ({
       </div>
       <button
         onClick={scrollRight}
-        className='text-lg border-2 ml-4 rounded-full p-2 z-20 bg-white transition hover:scale-110 active:scale-95 hover:shadow-lg'
+        className='text-lg border ml-4 rounded-full p-2 z-20 bg-white transition hover:scale-110 active:scale-95 hover:shadow-lg'
       >
         <HiOutlineChevronRight />
       </button>

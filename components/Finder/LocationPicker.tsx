@@ -13,6 +13,7 @@ export const LocationPicker = ({
 }) => {
 
   const debouncedValue = useDebounce(value, 1000)
+  const defaultLocations = [{location: 'Introduce a location'}]
 
   // TODO: Change this for the valid endpoint in google maps
   const { data, isLoading, isError } = useQuery<StayType[]>(
@@ -24,14 +25,15 @@ export const LocationPicker = ({
     onSelectLocation(selectedLocation)
   }
 
+
   return (
     <div className='my-2 w-full min-h-[70px]'>
       <SmallHorizontalList>
-        {(data ?? []).map(({ location }) => (
+        {(data ?? defaultLocations).map(({ location }) => (
           <div
             key={location}
             onClick={() => handleClickLocation(location)}
-            className="whitespace-nowrap py-2 px-4 rounded-full text-lg text-gray-600 hover:text-gray-900 hover:bg-gray-200 cursor-pointer"
+            className="whitespace-nowrap py-2 px-4 rounded-full text-lg text-gray-500 hover:text-gray-900 hover:bg-gray-200 cursor-pointer"
           >
             {location}
           </div>

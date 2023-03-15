@@ -2,14 +2,24 @@ import Image from 'next/image'
 import { HiGlobeAlt, HiMenu, HiUserCircle } from 'react-icons/hi'
 
 import logo from '@images/logo.svg'
+import logoSm from '@images/logosm.svg'
 import { FinderLg, FinderSm } from '@components/Finder'
+import { useRouter } from 'next/router'
 
 export const Header = () => {
+
+  const router = useRouter()
+
+  const goHome = () => {
+    router.push('/')
+  }
+
   return (
     <header className='sticky bg-white top-0 z-50 p-5 grid grid-cols-2 md:grid-cols-3 border-b md:px-10'>
       <div className='flex items-center cursor-pointer'>
         <Image
           src={logo}
+          onClick={goHome}
           alt='airbnb-logo'
           className='block'
           objectFit='contain'

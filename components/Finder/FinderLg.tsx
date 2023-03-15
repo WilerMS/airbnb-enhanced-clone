@@ -1,11 +1,12 @@
 import { SearchInput } from "./Search"
 import { useOutsideClick } from "@hooks/useOutsideClick"
 import { useState, useRef, FormEvent } from "react"
-import { DateRangePicker, RangeKeyDict } from "react-date-range"
+import { DateRange, RangeKeyDict } from "react-date-range"
 import { LocationPicker } from "./LocationPicker"
 
 import { AnimatePresence, motion } from "framer-motion"
 import { useRouter } from "next/router"
+import { PersonPicker } from "./PersonPicker"
 
 export const FinderLg = () => {
 
@@ -39,37 +40,36 @@ export const FinderLg = () => {
     !isValid && onCancel()
   })
 
+  const handleSelectLocation = (location: string) => setSearchedText(location)
   const handleSelectDate = (rg: RangeKeyDict) => {
     setStartDate(new Date(rg.selection.startDate!))
     setEndDate(new Date(rg.selection.endDate!))
   }
-
-  const handleSelectLocation = (location: string) => {
-    setSearchedText(location)
+  const handleAddGuest = (guest: 'adults' | 'kids' | 'babies') => {
+    setGuests({
+      ...guests,
+      [guest]: guests[guest] + 1
+    })
+  }
+  const handleRemoveGuest = (guest: 'adults' | 'kids' | 'babies') => {
+    setGuests({
+      ...guests,
+      [guest]: guests[guest] > 0 ? guests[guest] - 1 : 0
+    })
   }
 
   const handleChange = (e: FormEvent<HTMLInputElement>) => setSearchedText(e.currentTarget.value)
   const handleFocus = () => setShowFinder(true)
   const handleConfirm = () => {
-    const data = {
-      placeSelected: searchedText,
-      startDate,
-      endDate,
-      guests,
-    }
-
-    // TODO: What happens if not dates selected
-
     router.push({
       pathname: '/search',
       query: {
         location: searchedText,
         startDate: startDate.toISOString(),
-        endDate: endDate.toISOString()
+        endDate: endDate.toISOString(),
+        ...guests,
       }
     })
-
-    console.log({ data })
   }
 
   return (
@@ -85,23 +85,17 @@ export const FinderLg = () => {
           <div className='absolute w-full flex items-center justify-center col-span-3 mt-3' >
             <motion.div
               ref={ref}
-              initial={{
-                y: 0,
-                opacity: 0
-              }}
-              animate={{
-                y: 10,
-                opacity: 1
-              }}
+              initial={{ y: 0, opacity: 0 }}
+              animate={{ y: 10, opacity: 1 }}
               exit={{ opacity: 0, y: 0 }}
-              className='absolute z-20 flex flex-col w-full max-w-[970px] h-[635px] bg-white px-10 pt-4 rounded-xl top-20 shadow-2xl'
+              className='absolute z-20 flex flex-col w-full max-w-[740px] bg-white px-10 pt-4 rounded-xl top-20 shadow-2xl'
             >
               <LocationPicker
                 value={searchedText}
                 onSelectLocation={handleSelectLocation}
               />
 
-              <DateRangePicker
+              <DateRange
                 ranges={[{
                   startDate,
                   endDate,
@@ -114,7 +108,29 @@ export const FinderLg = () => {
                 onChange={handleSelectDate}
               />
 
-              <div className='w-full mt-10 space-x-4 flex justify-end h-full items-end pb-6'>
+              <div className="w-full h-[70px] rounded-xl flex items-center justify-around">
+                <PersonPicker
+                  person='Adults'
+                  value={guests.adults}
+                  onClickAdd={() => handleAddGuest('adults')}
+                  onClickRemove={() => handleRemoveGuest('adults')}
+                />
+                <PersonPicker
+                  person='Kids'
+                  value={guests.kids}
+                  onClickAdd={() => handleAddGuest('kids')}
+                  onClickRemove={() => handleRemoveGuest('kids')}
+
+                />
+                <PersonPicker
+                  person='Babies'
+                  value={guests.babies}
+                  onClickAdd={() => handleAddGuest('babies')}
+                  onClickRemove={() => handleRemoveGuest('babies')}
+                />
+              </div>
+
+              <div className='w-full h-full mt-5 space-x-4 flex justify-end items-end pb-6'>
                 <button
                   onClick={handleConfirm}
                   className='hover:scale-110 active:scale-95 transition py-2 px-10 bg-red-500 rounded-full text-white'
@@ -128,7 +144,6 @@ export const FinderLg = () => {
                   Cancel
                 </button>
               </div>
-
             </motion.div>
           </div>
         }
