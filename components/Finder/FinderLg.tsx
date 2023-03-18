@@ -7,31 +7,31 @@ import { LocationPicker } from "./LocationPicker"
 import { AnimatePresence, motion } from "framer-motion"
 import { useRouter } from "next/router"
 import { PersonPicker } from "./PersonPicker"
+import { useURLParams } from "@hooks/useURLParams"
 
 export const FinderLg = () => {
 
   const ref = useRef<HTMLDivElement>(null)
   const router = useRouter()
-  const [searchedText, setSearchedText] = useState<string>('')
+  const {
+    location: initialLocation,
+    startDate: initialStartDate,
+    endDate: initialEndDate,
+    guests: initialGuests,
+  } = useURLParams()
+  
+  const [searchedText, setSearchedText] = useState(initialLocation)
   const [showFinder, setShowFinder] = useState(false)
-  const [startDate, setStartDate] = useState<Date>(new Date())
-  const [endDate, setEndDate] = useState<Date>(new Date())
-  const [guests, setGuests] = useState({
-    adults: 2,
-    kids: 0,
-    babies: 0
-  })
+  const [startDate, setStartDate] = useState(initialStartDate)
+  const [endDate, setEndDate] = useState(initialEndDate)
+  const [guests, setGuests] = useState(initialGuests)
 
   const onCancel = () => {
-    setSearchedText('')
+    setSearchedText(initialLocation)
     setShowFinder(false)
-    setStartDate(new Date())
-    setEndDate(new Date())
-    setGuests({
-      adults: 2,
-      kids: 0,
-      babies: 0
-    })
+    setStartDate(initialStartDate)
+    setEndDate(initialEndDate)
+    setGuests(initialGuests)
   }
 
   useOutsideClick(ref, (target: HTMLElement) => {
@@ -77,7 +77,7 @@ export const FinderLg = () => {
       <SearchInput
         value={searchedText}
         onChange={handleChange}
-        onFocus={handleFocus}
+        onClick={handleFocus}
       />
 
       <AnimatePresence>

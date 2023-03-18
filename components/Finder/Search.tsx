@@ -6,9 +6,13 @@ export const SearchInput = ({
   ref,
   onChange = () => { },
   onFocus = () => { },
+  onClick = () => { }
 }: DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>) => {
   return (
-    <div className='search-input hidden md:flex items-center rounded-full py-2 md:border-2 md:shadow-sm hover:shadow-md transition-shadow'>
+    <div
+      onClick={onClick}
+      className='search-input hidden md:flex items-center rounded-full py-2 md:border-2 md:shadow-sm hover:shadow-md transition-shadow'
+    >
       <input
         ref={ref}
         onChange={onChange}

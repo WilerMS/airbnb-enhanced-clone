@@ -117,7 +117,7 @@ const Home: NextPage<PropsType> = ({
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const nearby: PlacesType[] = await fetch('http://localhost:3000/nearby').then(r => r.json())
   const liveAnyWhere: PlacesType[] = await fetch('http://localhost:3000/live-anywhere').then(r => r.json())
   const places: PlacesType[] = await fetch('http://localhost:3000/places').then(r => r.json())
