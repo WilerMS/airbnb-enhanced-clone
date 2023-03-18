@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 import { DateRange } from "react-date-range"
-import { useRef, FormEvent, useCallback } from "react"
+import { useRef, FormEvent, useCallback, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 
 import { SearchInput } from "./Search"
@@ -8,9 +8,11 @@ import { useOutsideClick } from "@hooks/useOutsideClick"
 import { LocationPicker } from "./LocationPicker"
 import { PersonPicker } from "./PersonPicker"
 import { useFinder } from "@hooks/useFinder"
+import { MdError } from "react-icons/md"
 
 export const FinderLg = () => {
 
+  const [searchError, setSearchError] = useState<string | null>(null)
   const ref = useRef<HTMLDivElement>(null)
   const router = useRouter()
   const {
@@ -28,7 +30,7 @@ export const FinderLg = () => {
     selectLocation,
   } = useFinder()
 
-  
+
   useOutsideClick(ref, (target: HTMLElement) => {
     const searchInput = document.querySelector('.search-input')
     const isValid = searchInput?.contains(target)
@@ -36,6 +38,13 @@ export const FinderLg = () => {
   })
 
   const onConfirm = () => {
+
+    if (!location) {
+      setSearchError('Write or select a valid location')
+      return
+    }
+
+    setSearchError(null)
     closeFinder()
     router.push({
       pathname: '/search',
@@ -107,6 +116,12 @@ export const FinderLg = () => {
               </div>
 
               <div className='w-full h-full mt-5 space-x-4 flex justify-end items-end pb-6'>
+                {searchError &&
+                  <div className="w-full py-2 text-red-600 font-bold flex items-center gap-2">
+                    <MdError />
+                    {searchError}
+                  </div>
+                }
                 <button
                   onClick={onConfirm}
                   className='hover:scale-110 active:scale-95 transition py-2 px-10 bg-red-500 rounded-full text-white'

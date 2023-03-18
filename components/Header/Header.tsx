@@ -15,7 +15,7 @@ export const Header = () => {
   }
 
   return (
-    <header className='sticky bg-white bg-opacity-95 top-0 z-50 p-5 grid grid-cols-2 md:grid-cols-3 md:px-10 backdrop-blur'>
+    <header className='sticky bg-white bg-opacity-90 top-0 z-50 p-5 grid grid-cols-2 md:grid-cols-3 md:px-10 backdrop-blur'>
       <div className='flex items-center cursor-pointer'>
         <Image
           src={logo}

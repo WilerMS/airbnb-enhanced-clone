@@ -11,7 +11,7 @@ export const SearchInput = ({
   return (
     <div
       onClick={onClick}
-      className='search-input hidden md:flex items-center rounded-full py-2 md:border-2 md:shadow-sm hover:shadow-md transition-shadow'
+      className='search-input bg-white hidden md:flex items-center rounded-full py-2 md:border-2 md:shadow-sm hover:shadow-md transition-shadow'
     >
       <input
         ref={ref}
