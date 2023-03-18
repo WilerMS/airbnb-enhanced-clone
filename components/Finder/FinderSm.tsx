@@ -63,9 +63,6 @@ export const FinderSm = () => {
         endDate: endDate.toISOString()
       }
     })
-
-
-    console.log({ data })
   }
 
   return (

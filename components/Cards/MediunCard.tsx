@@ -22,7 +22,7 @@ export const MediunCard = ({
 }: MediunCardType) => {
 
   return (
-    <div className=' relative w-40 md:w-60 cursor-pointer hover:scale-105 transform transition duration-300 select-none'>
+    <div className=' relative w-40 md:w-60 cursor-pointer hover:scale-105 active:scale-95 transform transition duration-300 select-none'>
       <div className='absolute z-10 text-2xl text-white right-2 top-2'>
         <HiOutlineHeart />
       </div>
