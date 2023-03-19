@@ -12,14 +12,13 @@ export const LocationPicker = ({
 }) => {
 
   const debouncedValue = useDebounce(value, 1000)
-  const defaultLocations = [{location: ''}]
+  const defaultLocations = [{location: 'Madrid, Spain'}, {location: 'Paris, France'}]
 
-  // TODO: Change this for the valid endpoint in google maps
   const { data, isLoading, isError } = useQuery<StayType[]>(
     debouncedValue,
     () => fetch(`http://localhost:3002/api/autocomplete/${debouncedValue}`).then(res => res.json()),
     {
-      enabled: Boolean(debouncedValue)
+      enabled: false
     }
   )
 

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 import { DateRange } from "react-date-range"
-import { useRef, FormEvent, useCallback, useState } from "react"
+import { useRef, FormEvent, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 
 import { SearchInput } from "./Search"

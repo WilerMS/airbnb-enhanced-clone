@@ -5,6 +5,7 @@ import logo from '@images/logo.svg'
 import logoSm from '@images/logosm.svg'
 import { FinderLg, FinderSm } from '@components/Finder'
 import { useRouter } from 'next/router'
+import { UserDropdownButton } from './UserDropdownButton'
 
 export const Header = () => {
 
@@ -35,10 +36,7 @@ export const Header = () => {
         <div className='hidden md:flex cursor-pointer rounded-full hover:bg-gray-100 transition-all p-2 text-xl'>
           <HiGlobeAlt />
         </div>
-        <div className='flex items-center border-2 p-2 rounded-full cursor-pointer hover:shadow-md transition-shadow space-x-1'>
-          <HiMenu className='text-xl text-gray-500' />
-          <HiUserCircle className='text-2xl text-gray-500' />
-        </div>
+        <UserDropdownButton />
       </div>
     </header>
   )

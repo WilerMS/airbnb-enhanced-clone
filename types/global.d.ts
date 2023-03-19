@@ -16,7 +16,22 @@ declare interface StayType {
   location: string;
   price: number;
   description?: string
-  rate?: number
+  rate: number
+  latitude: number
+  longitude: number
+
+}
+
+declare interface MapPropTypes {
+  markers: {
+    img: string,
+    location: string,
+    title: string,
+    rate: number,
+    price: number,
+    latitude: number,
+    longitude: number,
+  }[]
 }
 
 

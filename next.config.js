@@ -5,6 +5,7 @@ module.exports = {
     domains: [
       'links.papareact.com',
       'images.pexels.com',
+      'https://a.tile.openstreetmap.org',
     ]
   }
 }

@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from "framer-motion"
 import { FormEvent, useState } from "react"
 import { SearchInputSm } from './Search'
 import { RangeKeyDict } from "react-date-range"
-import { HiX } from "react-icons/hi"
 import { useRouter } from "next/router"
 
 

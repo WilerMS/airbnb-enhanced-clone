@@ -185,7 +185,7 @@
       "price": 25
     }
   ],
-  "accommodations": [
+  "recommendations": [
     {
       "img": "https://images.pexels.com/photos/3722818/pexels-photo-3722818.jpeg",
       "title": "RIU Hotel",
@@ -356,6 +356,108 @@
       "title": "Segovia",
       "subtitle": "The Enchanting Medieval Town of Castles and Cathedrals",
       "description": "Segovia is a small but beautiful city with a rich cultural heritage. The city's most famous landmark is its stunning Roman aqueduct, which dates back to the 1st century AD. Segovia is also home to an impressive medieval castle and a gothic cathedral. The city's Jewish Quarter is a picturesque maze of narrow streets and white-washed buildings."
+    }
+  ],
+  "stays": [
+    {
+      "img": "https://images.pexels.com/photos/688835/pexels-photo-688835.jpeg",
+      "title": "Stylish loft in trendy neighborhood",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.7,
+      "location": "52 Hopton St, London SE1 9JH, Reino Unido",
+      "price": 100,
+      "latitude":  51.5068559, 
+      "longitude": -0.1062749
+    },
+    {
+      "img": "https://images.pexels.com/photos/14002096/pexels-photo-14002096.jpeg",
+      "title": "Modern and spacious apartment",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.6,
+      "location": "Barge House St, London SE1 9PH, Reino Unido",
+      "price": 200,
+      "latitude": 51.507820, 
+      "longitude": -0.107562
+    },
+    {
+      "img": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+      "title": "Beautiful apartment in the heart of the city",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.8,
+      "location": "20 Upper Ground, London SE1 9PD, United Kingdom",
+      "price": 120,
+      "latitude":51.508740,
+      "longitude": -0.101359
+    },
+    {
+      "img": "https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg",
+      "title": "Spacious villa with stunning ocean views",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.9,
+      "location": "Barge House St, London SE1 9PH, Reino Unido",
+      "price": 350,
+      "latitude": 51.5074036,
+      "longitude": -0.1064457
+    },
+    {
+      "img": "https://images.pexels.com/photos/3538558/pexels-photo-3538558.jpeg",
+      "title": "Cozy cabin in the woods",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.6,
+      "location": "London SE1 9UD, Reino Unido",
+      "price": 90,
+      "latitude": 51.507582,
+      "longitude": -0.104505
+    },
+    {
+      "img": "https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg",
+      "title": "Luxury apartment with stunning city views",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.7,
+      "location": "54, 52 Stamford St, London SE1 9LX, Reino Unido",
+      "price": 240,
+      "latitude": 51.507072, 
+      "longitude": -0.107427
+    },
+    {
+      "img": "https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg",
+      "title": "Beautiful beachfront villa",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.9,
+      "location": "Unit 10b, South Bank Tower, London SE1 9LS, Reino Unido",
+      "price": 500,
+      "latitude": 51.507342, 
+      "longitude": -0.105523
+    },
+    {
+      "img": "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg",
+      "title": "Charming countryside cottage",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.5,
+      "location": "54, 52 Stamford St, London SE1 9LX, Reino Unido",
+      "price": 80,
+      "latitude": 51.507361, 
+      "longitude": -0.107401
+    },
+    {
+      "img": "https://images.pexels.com/photos/803975/pexels-photo-803975.jpeg",
+      "title": "Cozy mountain cabin",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.8,
+      "location": "1 Blackfriars Bridge, London SE1 9UD, Reino Unido",
+      "price": 150,
+      "latitude": 51.508586, 
+      "longitude": -0.104900
+    },
+    {
+      "img": "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+      "title": "Secluded beach bungalow",
+      "description": "2 guests · 1 bedroom · 1 bed · WIFI · Kitchen · Free Parking · Washing Machine",
+      "rate": 4.8,
+      "location": "3-7 Stamford St, London SE1 9NY, Reino Unido",
+      "price": 300,
+      "latitude":  51.5074036,
+      "longitude": -0.1064457
     }
   ]
 }

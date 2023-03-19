@@ -2,6 +2,8 @@ import Image from "next/image"
 import { HiOutlineStar, HiStar, HiHeart, HiOutlineHeart } from "react-icons/hi"
 
 type MediunCardType = {
+  imgClassName?: string;
+  className?: string;
   title: string;
   subtitle?: string;
   img: string;
@@ -12,6 +14,8 @@ type MediunCardType = {
 }
 
 export const MediunCard = ({
+  className,
+  imgClassName,
   title,
   img,
   location,
@@ -22,11 +26,11 @@ export const MediunCard = ({
 }: MediunCardType) => {
 
   return (
-    <div className=' relative w-40 md:w-60 cursor-pointer hover:scale-105 active:scale-95 transform transition duration-300 select-none'>
+    <div className={`${className} bg-white rounded-lg relative w-40 md:w-60 cursor-pointer hover:scale-105 active:scale-95 transform transition duration-300 select-none`}>
       <div className='absolute z-10 text-2xl text-white right-2 top-2'>
         <HiOutlineHeart />
       </div>
-      <div className='relative h-40 w-40 md:w-60 md:h-60'>
+      <div className={`${imgClassName} relative h-40 w-40 md:w-60 md:h-60`}>
         <Image
           src={img}
           alt={title}

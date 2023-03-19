@@ -12,14 +12,14 @@ type PropsType = {
   liveAnyWhere: PlacesType[]
   places: PlacesType[]
   cities: PlacesType[]
-  accommodations: StayType[]
+  recommendations: StayType[]
 }
 
 const Home: NextPage<PropsType> = ({
   nearby = [],
   liveAnyWhere = [],
   places = [],
-  accommodations = [],
+  recommendations = [],
   cities = []
 }) => {
   return (
@@ -48,7 +48,7 @@ const Home: NextPage<PropsType> = ({
 
         <Section title='Recommended for you'>
           <HorizontalList scrollSize={300}>
-            {accommodations.map(({ img, title, location, price, rate }) => (
+            {recommendations.map(({ img, title, location, price, rate }) => (
               <MediunCard
                 key={title}
                 img={img}
@@ -122,14 +122,14 @@ export async function getServerSideProps() {
   const liveAnyWhere: PlacesType[] = await fetch('http://localhost:3000/live-anywhere').then(r => r.json())
   const places: PlacesType[] = await fetch('http://localhost:3000/places').then(r => r.json())
   const cities: PlacesType[] = await fetch('http://localhost:3000/cities').then(r => r.json())
-  const accommodations: StayType[] = await fetch('http://localhost:3000/accommodations').then(r => r.json())
+  const recommendations: StayType[] = await fetch('http://localhost:3000/recommendations').then(r => r.json())
 
   return {
     props: {
       nearby,
       liveAnyWhere,
       places,
-      accommodations,
+      recommendations,
       cities,
     }
   }
