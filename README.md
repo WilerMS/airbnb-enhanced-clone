@@ -1,27 +1,44 @@
-# Next.js + Tailwind CSS Example
+<h1 align="center">Airbnb Enhanced Clone</h1>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+<p align="center">This project is an enhanced clone of the popular accommodation rental platform, Airbnb. It offers a unique and improved design compared to the original platform. The project is built using Next.js with TypeScript, React, TailwindCSS, and Framer Motion animations.</p>
 
-## Deploy your own
+<p align="center"><img height="450" align="center" src="https://user-images.githubusercontent.com/70902862/230780754-95cbb0a9-6a8b-4646-9d1b-70c4d4621bc8.jpg" ></p>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Table of Contents
 
-## How to use
+- [Features](#features)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Features
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+Some of the key features of this Airbnb clone include:
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+- User registration and login
+- Property search and listing
+- Booking and payment processing
+- User review and rating system
+- Host management dashboard
+- User profile customization
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Installation
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+To install and run the project on your local machine, follow these steps:
+
+1. Clone the repository to your local machine
+2. Start a MongoDB instance with Docker by running `docker run -p 27017:27017 mongo`
+3. Navigate to the project directory in your terminal
+4. Run `npm install` to install the necessary dependencies
+5. Run `npm run dev` to start the development server
+
+Note: You need to have Docker installed on your machine to start a MongoDB instance with the above command.
+
+## Contributing
+
+Contributions to this project are welcome! If you have any suggestions or would like to contribute to the codebase, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT license.
